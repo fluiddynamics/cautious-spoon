@@ -1,0 +1,280 @@
+\documentclass[12pt]{ltjsarticle}
+\usepackage[ipa]{luatexja-preset}
+\usepackage{fancybox}
+\usepackage{amsmath}
+\renewcommand{\refname}{出典}
+\addtolength{\oddsidemargin}{-1cm}
+\addtolength{\evensidemargin}{-1cm}
+\addtolength{\topmargin}{-1cm}
+\addtolength{\textwidth}{2cm}
+\addtolength{\textheight}{1cm}
+\begin{document}
+\title{確率統計の問題集}
+\maketitle
+\section{計算問題}
+\begin{enumerate}
+\item 次の問いに答えよ
+\begin{enumerate}
+\item
+お金が入っている箱がたくさん並んでいます．
+各々の箱の額は不明で，その平均金額を知るために，標本として1箱だけ
+無作為に抽出して調べたところ，箱の中には500円が入っていました．
+すべての箱の中の平均金額を区間推定してみてください．
+ただし，箱の中の金額は分散$30^2$の正規分布に従うとします．
+\cite[p.122]{wakui}
+\item
+お金が入っている中の見えない箱がたくさん並んでいます．
+各々の箱の額は不明で，平均金額を知るために，標本として9箱を無作為に
+抽出し調べてみました．その結果は次の通りです．\\
+\hspace{1cm} 530, 515, 470, 545, 440, 530, 455, 560, 455 \\
+この標本から，箱の中の平均金額を信頼度95\%で推定してください．
+ただし，箱の中の金額は分散$30^2$の正規分布に従うとします．
+\cite[p.127]{wakui}
+\item
+A県の20歳男子の200人を無作為に抽出したところ，身長の平均は168.0でした．
+A研の身長は母分散$6.5^2$の正規分布に従うと仮定できます．
+この県の20歳男子全体の平均身長μを信頼度95\%で推定してください．
+\cite[p.131]{wakui}
+\item
+上の例題で，信頼度を95\%ではなく，99\%にした時の信頼区間を求めてください．
+\cite[p.131]{wakui}
+\item
+お金が入っている中の見えない箱がたくさん並んでいます．
+各々の箱の額は不明で，平均金額を知るために，標本として
+9箱，無作為に抽出し調べた結果は次の通りでした．\\
+\hspace{1cm} 530, 515, 470, 545, 440, 530, 455, 560, 455 \\
+この標本から，箱の中の平均金額を信頼度95\%で推定してください．
+ただし，箱の中の金額は正規分布に従うとします．
+\cite[p.132]{wakui}
+\item
+A県の20歳男子10人を抽出し身長を調べたところ，
+その標本の平均身長は168.0，不偏分散は$6.5^2$でした．
+この県の20歳男子の平均身長μを信頼度95\%で推定してください．
+なお，自由度9の両側5％点は2.26として計算してください．
+\cite[p.135]{wakui}
+\item
+中の見えないたくさんの箱の中にはお金が入っています．
+箱の中の金額Xの平均値を知るために，大きさ100の標本を取り出し
+調べたところ，次のように標本平均$\overline{X}$と不偏分散$s^2$が求められました．
+これらの値から，箱の中の金額の平均値$\mu$を信頼度95\%で推定してください． \\
+\hspace{1cm} $\overline{X} = 500, \quad s^2=50^2$\\
+\cite[p.142]{wakui}
+\item
+A県の20歳男子200人を抽出し調べたところ，その標本の平均身長は168.0，
+不偏分散は$6.5^2$でした．この県の20歳男子の平均身長$\mu$を信頼度
+95\%で推定してください．
+\cite[p.142]{wakui}
+\item
+日本全体のペットの飼育率を調べるために大きさ500の
+標本を抽出して標本比率を調べたところ，0.62でした．
+これをもとに日本全体のペットの飼育率$R$を信頼度95\%で
+推定してください．
+\cite[p.145]{wakui}
+\item
+K工場から出荷されるカップラーメン10個について，その
+内容量を調べたところ，次のような結果が得られました．
+この標本から，製造されるカップラーメン全体の内容量の分散$\sigma^2$
+を信頼度95\%で推定してください．\\
+\hspace{1cm} 184.2, 176.4, 168.0, 170.0, 159.1,
+177.7, 176.0, 165.3, 164.6, 174.4 \\
+\cite[p.147]{wakui}
+\item
+ある都市の住民の体重の分散$\sigma^2$を推定するために大きさ10の標本を抽出して
+調べたところ，不偏分散$s^2$が35.4でした．
+この都市の住民の体重の分散$\sigma^2$を信頼度95\%で推定してください．
+\cite[p.149]{wakui}
+\end{enumerate}
+\item
+次のデータは正規分布$N\left(\mu, \sigma^2\right)$
+からの無作為標本値である．\cite[p.164]{inagaki}
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{rrrrrr}
+12.7& 6.6& 5.6& 14.3& 11.4& 10.8 \\
+13.8& 11.2& 10.0& 12.8& 7.1& 14.0
+\end{tabular}
+\end{center}
+\end{table}
+\begin{enumerate}
+\item 分散が$\sigma^2=7$として与えられているとき，$\mu$の
+95\%信頼区間を求めよ．
+\item 分散$\sigma^2$が未知のとき，$\mu$の95\%信頼区間を求めよ．
+\item 分散$\sigma^2$の95\%信頼区間を求めよ．
+\end{enumerate}
+\item
+ある町の有権者300人に候補者Aを支持するかどうか意見を聞いたところ，
+180人が支持すると答えた．この調査結果から，候補者Aの支持率$p$の
+95\%信頼区間を求めよ．
+\cite[p.165]{inagaki}
+\item
+$n$を自然数とする．
+原点$O$から出発して数直線上を$n$回移動する点$A$を考える．
+点$A$は，1回ごとに，確率$p$で正の向きに3だけ移動し，
+確率$1-p$で負の向きに1だけ移動する．
+ここで，$0<p<1$である．
+$n$回移動した後の点$A$の座標を$X$とし，$n$回の移動のうち
+正の向きの移動の回数を$Y$とする．
+\begin{enumerate}
+\item $\displaystyle p=\frac{1}{3}, n=2$の時，
+確率変数$X$のとり得る値は，小さい順に
+\framebox{ア}, \framebox{イ}, \framebox{ウ}
+であり，これらの値をとる確率は，それぞれ
+\framebox{エ}, \framebox{オ}, \framebox{カ}
+である．
+\item $n$回移動したとき，$X$と$Y$の間に$X=\framebox{キ}+\framebox{ク}Y$
+の関係が成り立つ．
+確率変数$Y$の平均（期待値）は\framebox{ケ}，分散は\framebox{コ}
+なので，$X$の平均は\framebox{サ}，分散は\framebox{シ}である．
+\item $\displaystyle p=\frac{1}{3}$のとき，1200回移動した後の点Aの
+座標$X$が120以上になる確率の近似値を求めよう．
+(b)により，$Y$の平均は\framebox{ス}，標準偏差は\framebox{セ}であり，求める確率は次のようになる．
+$$
+P\left(X\ge 120\right) =
+P\left(\frac{Y-\framebox{ス}}{\framebox{セ}}\ge \framebox{ソ}\right)
+$$
+いま，標準正規分布に従う確率変数を$Z$とすると，$n=1200$は十分に大きいので，
+求める確率の近似値は正規分布表から次のように求められる．
+$$
+P\left(Z\ge \framebox{ソ}\ \right)=\framebox{タ}
+$$
+\end{enumerate}
+\end{enumerate}
+\section{数式の問題}
+\begin{enumerate}
+\item
+$\Gamma$関数の定義は以下で与えられます．
+\[
+\Gamma\left(x\right)=\int_0^\infty t^{x-1}e^{-t}dt,\qquad
+x>0
+\]
+以下の空欄を埋めてください．
+\begin{eqnarray*}
+\Gamma\left(x+1\right)&=&\fbox{}
+=x\Gamma\left(x\right). \\
+\Gamma\left(1\right)&=&\fbox{}=1. \\
+\Gamma\left(2\right)&=&\fbox{}=2. \\
+\Gamma\left(x\right)&=&\fbox{}=2\int_0^\infty t^{2x-1}e^{-t^2}dt.
+\end{eqnarray*}
+\item
+$B$関数の定義は以下で与えられます．
+\[
+B\left(x,y\right)=2\int_0^\frac{\pi}{2}
+\cos^{2x-1}\theta\sin^{2y-1}\theta\,d\theta,\qquad
+x>0,\ y>0
+\]
+以下の空欄を埋めてください．
+\begin{eqnarray*}
+B\left(x,y\right)&=&\fbox{}=
+\frac{\Gamma\left(x\right)\Gamma\left(y\right)}{\Gamma\left(x+y\right)}. \\
+B\left(1,1\right)&=&\fbox{}. \\
+\Gamma\left(\frac{1}{2}\right)&=&\fbox{}=\sqrt{\pi}. \\
+\Gamma\left(\frac{3}{2}\right)&=&\fbox{}=\frac{\sqrt{\pi}}{2}. \\
+\end{eqnarray*}
+\item
+正規分布$N\left(\mu,\sigma^2\right)$の確率密度関数は，$k$を定数として
+以下のように表せます．
+\[
+f\left(x\right)=ke^{-\frac{\left(x-\mu\right)^2}{2\sigma^2}}
+\]
+確率変数$X$は$N\left(\mu,\sigma^2\right)$に従うとします．
+以下の空欄を埋めてください．
+\begin{eqnarray*}
+k&=&\fbox{}=\frac{1}{\sqrt{2\pi\sigma^2}}. \\
+E\left(X\right)&=&\fbox{}=\mu. \\
+V\left(X\right)&=&\fbox{}=\sigma^2.
+\end{eqnarray*}
+\item
+自由度$n$の$\chi^2$分布$\chi_n^2$の確率密度関数は，$k$を定数として
+以下のように表せます．
+\[
+f\left(x\right)=kx^{\frac{n}{2}-1}e^{-\frac{x}{2}},\qquad
+x>0
+\]
+確率変数$X$は$\chi_n$に従うとします．
+以下の空欄を埋めてください．
+\begin{eqnarray*}
+k&=&\fbox{}=\frac{1}{\Gamma\left(\frac{n}{2}\right)2^{\frac{n}{2}}}. \\
+E\left(X\right)&=&\fbox{}=n. \\
+V\left(X\right)&=&\fbox{}=2n.
+\end{eqnarray*}
+\item
+自由度$n$の$T$分布$T_n$の確率密度関数は，$k$を定数として
+以下のように表せます．
+\[
+f\left(x\right)=k\left(1+\frac{x^2}{n}\right)^{-\frac{n+1}{2}}
+\]
+確率変数$X$は$T_n$に従うとします．
+以下の空欄を埋めてください．
+\begin{eqnarray*}
+k&=&\fbox{}=\frac{1}{\sqrt{n}B\left(\frac{n}{2},\frac{1}{2}\right)}. \\
+E\left(X\right)&=&\fbox{}=0.
+\end{eqnarray*}
+\item
+自由度$m,n$のエフ分布$F_n^m$の確率密度関数は，$k$を定数として
+以下のように表せます．
+\[
+f\left(x\right)=kx^{\frac{m}{2}-1}\left(\frac{m}{n}x+1\right)^{-\frac{m+n}{2}}
+,\qquad
+x>0
+\]
+以下の空欄を埋めてください．
+\[
+k=\fbox{}
+\]
+\item
+ベータ分布$B_E\left(\alpha,\beta\right)$の確率密度関数は，$k$を定数として
+以下のように表せます．
+\[
+f\left(x\right)=kx^{\alpha-1}\left(1-x\right)^{\beta-1},\qquad
+0<x<1.
+\]
+以下の空欄を埋めてください．
+\[
+k=\fbox{}
+\]
+\item
+確率分布について，次の関係を示してください．
+\begin{enumerate}
+\item
+$X$が$N\left(\mu,\sigma^2\right)$に従うとき，
+$aX+b$は$N\left(a\mu+b,a^2\sigma^2\right)$に従う．
+ただし$a,b$は定数．
+\item
+$X$が$N\left(0,1\right)$に従うとき，
+$X^2$は$\chi_1$に従う．
+\end{enumerate}
+\item
+$n$は任意の正整数，$k$は$1\le k\le n$なる整数であり，
+$p$は$0<p<1$なる実数であるとする．
+\begin{enumerate}
+\item
+等式：
+\[
+\sum_{r=k}^{n}\binom{n}{r}p^r\left(1-p\right)^{n-r}=
+\frac{1}{B\left(k,n-k+1\right)}\int_0^p x^{k-1}\left(1-x\right)^{n-k}dx
+\]
+が成り立つことを証明せよ．
+\cite[p.47]{inagaki}
+\item
+確率変数$X$がベータ分布$B_E\left(k,n-k+1\right)$
+に従うとき，$$ Y=\left(\frac{n+1}{k}-1\right)\left(\frac{1}{1-X}-1\right)$$
+は自由度$\left(2k,
+2\left(n-k+1\right)\right)$のエフ分布に従うことを示せ．
+\cite[p.106]{inagaki}
+\item
+$X$が二項分布$B_N\left(n,p\right)$に従うとき，等式：
+\[
+P\left(X \ge k\right)=
+P\left(Y\le \left(\frac{n+1}{k}-1\right)\left(\frac{1}{1-p}-1\right)\right)
+\]
+が成り立つことを示せ．ただし，$Y$は自由度$\left(2k,
+2\left(n-k+1\right)\right)$のエフ分布に従う確率変数である．
+\cite[p.106]{inagaki}
+\end{enumerate}
+\end{enumerate}
+\begin{thebibliography}{9}
+\bibitem{wakui} 涌井貞美,意味がわかる統計解析
+\bibitem{center} 平成28年度大学入試センター試験 数学Ⅱ・数学Ｂ
+\bibitem{inagaki} 稲垣宣生,数理統計学
+\end{thebibliography}
+\end{document}
