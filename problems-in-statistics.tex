@@ -147,13 +147,12 @@ $\Gamma$関数の定義は以下で与えられます．
 \Gamma\left(x\right)=\int_0^\infty t^{x-1}e^{-t}dt,\qquad
 x>0
 \]
-以下の空欄を埋めてください．
+以下のことを示してください．
 \begin{eqnarray*}
-\Gamma\left(x+1\right)&=&\fbox{}
-=x\Gamma\left(x\right). \\
-\Gamma\left(1\right)&=&\fbox{}=1. \\
-\Gamma\left(2\right)&=&\fbox{}=2. \\
-\Gamma\left(x\right)&=&\fbox{}=2\int_0^\infty t^{2x-1}e^{-t^2}dt.
+\Gamma\left(x+1\right)&=&x\Gamma\left(x\right). \\
+\Gamma\left(1\right)&=&1. \\
+\Gamma\left(2\right)&=&1. \\
+\Gamma\left(x\right)&=&2\int_0^\infty t^{2x-1}e^{-t^2}dt.
 \end{eqnarray*}
 \item
 $B$関数の定義は以下で与えられます．
@@ -162,13 +161,14 @@ B\left(x,y\right)=2\int_0^\frac{\pi}{2}
 \cos^{2x-1}\theta\sin^{2y-1}\theta\,d\theta,\qquad
 x>0,\ y>0
 \]
-以下の空欄を埋めてください．
+以下のことを示してください．
 \begin{eqnarray*}
-B\left(x,y\right)&=&\fbox{}=
+B\left(x,y\right)&=&
 \frac{\Gamma\left(x\right)\Gamma\left(y\right)}{\Gamma\left(x+y\right)}. \\
-B\left(1,1\right)&=&\fbox{}. \\
-\Gamma\left(\frac{1}{2}\right)&=&\fbox{}=\sqrt{\pi}. \\
-\Gamma\left(\frac{3}{2}\right)&=&\fbox{}=\frac{\sqrt{\pi}}{2}. \\
+B\left(1,1\right)&=&1. \\
+B\left(\frac{1}{2},\frac{1}{2}\right)&=&\pi. \\
+\Gamma\left(\frac{1}{2}\right)&=&\sqrt{\pi}. \\
+\Gamma\left(\frac{3}{2}\right)&=&\frac{\sqrt{\pi}}{2}. \\
 \end{eqnarray*}
 \item
 正規分布$N\left(\mu,\sigma^2\right)$の確率密度関数は，$k$を定数として
@@ -177,11 +177,11 @@ B\left(1,1\right)&=&\fbox{}. \\
 f\left(x\right)=ke^{-\frac{\left(x-\mu\right)^2}{2\sigma^2}}
 \]
 確率変数$X$は$N\left(\mu,\sigma^2\right)$に従うとします．
-以下の空欄を埋めてください．
+以下のことを示してください．
 \begin{eqnarray*}
-k&=&\fbox{}=\frac{1}{\sqrt{2\pi\sigma^2}}. \\
-E\left(X\right)&=&\fbox{}=\mu. \\
-V\left(X\right)&=&\fbox{}=\sigma^2.
+k&=&\frac{1}{\sqrt{2\pi\sigma^2}}. \\
+E\left(X\right)&=&\mu. \\
+V\left(X\right)&=&\sigma^2.
 \end{eqnarray*}
 \item
 自由度$n$の$\chi^2$分布$\chi_n^2$の確率密度関数は，$k$を定数として
@@ -191,11 +191,11 @@ f\left(x\right)=kx^{\frac{n}{2}-1}e^{-\frac{x}{2}},\qquad
 x>0
 \]
 確率変数$X$は$\chi_n$に従うとします．
-以下の空欄を埋めてください．
+以下のことを示してください．
 \begin{eqnarray*}
-k&=&\fbox{}=\frac{1}{\Gamma\left(\frac{n}{2}\right)2^{\frac{n}{2}}}. \\
-E\left(X\right)&=&\fbox{}=n. \\
-V\left(X\right)&=&\fbox{}=2n.
+k&=&\frac{1}{\Gamma\left(\frac{n}{2}\right)2^{\frac{n}{2}}}. \\
+E\left(X\right)&=&n. \\
+V\left(X\right)&=&2n.
 \end{eqnarray*}
 \item
 自由度$n$の$T$分布$T_n$の確率密度関数は，$k$を定数として
@@ -204,10 +204,10 @@ V\left(X\right)&=&\fbox{}=2n.
 f\left(x\right)=k\left(1+\frac{x^2}{n}\right)^{-\frac{n+1}{2}}
 \]
 確率変数$X$は$T_n$に従うとします．
-以下の空欄を埋めてください．
+以下のことを示してください．
 \begin{eqnarray*}
-k&=&\fbox{}=\frac{1}{\sqrt{n}B\left(\frac{n}{2},\frac{1}{2}\right)}. \\
-E\left(X\right)&=&\fbox{}=0.
+k&=&\frac{1}{\sqrt{n}B\left(\frac{n}{2},\frac{1}{2}\right)}. \\
+E\left(X\right)&=&0.
 \end{eqnarray*}
 \item
 自由度$m,n$のエフ分布$F_n^m$の確率密度関数は，$k$を定数として
@@ -215,7 +215,7 @@ E\left(X\right)&=&\fbox{}=0.
 \[
 f\left(x\right)=kx^{\frac{m}{2}-1}\left(\frac{m}{n}x+1\right)^{-\frac{m+n}{2}}
 ,\qquad
-x>0
+x>0.
 \]
 以下の空欄を埋めてください．
 \[
@@ -270,6 +270,11 @@ P\left(Y\le \left(\frac{n+1}{k}-1\right)\left(\frac{1}{1-p}-1\right)\right)
 が成り立つことを示せ．ただし，$Y$は自由度$\left(2k,
 2\left(n-k+1\right)\right)$のエフ分布に従う確率変数である．
 \cite[p.106]{inagaki}
+\item
+次の不等式を$p$について解いてください．
+\[
+Y\le \left(\frac{n+1}{k}-1\right)\left(\frac{1}{1-p}-1\right)
+\]
 \end{enumerate}
 \end{enumerate}
 \begin{thebibliography}{9}
